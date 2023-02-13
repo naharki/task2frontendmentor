@@ -1,0 +1,160 @@
+/* This is import of font from google */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* Making margin, padding and box-sizing: boeder box is good*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    }
+
+    ul{
+        list-style-type: none;
+    }
+    
+body {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    background-color:  hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /*This vertically align items center */
+    justify-content: center;    /*This horizontally align items center */
+    min-height: calc(100vh - 0.1px);
+    margin: 0 1.5rem;
+    
+}
+
+button, li {
+    font-family:inherit ;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+color: hsl(212, 21%, 14%);
+}
+
+h2 {
+    text-transform: uppercase;  /*This transform small letter alphabet to capital letter */
+    font-weight: 500;
+    font-size: 0.9rem;
+    color:hsl(228, 12%, 48%) ;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;  /*This is used to set the space between letters */
+}
+
+.price { 
+    color:hsl(212, 21%, 14%) ;
+}
+
+h1, .price {
+    font-family: 'Fraunces', sans-serif;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;     /*This align the text on the center horizontally */
+    margin-top: 2rem ;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44);
+}
+
+.container {
+    margin-top: 2rem;
+    max-width: 600px;   /*This sets the max-width of the container  that prevent*/
+}
+
+.container h1{
+    margin: 1rem  0 1rem 0;
+    font-size: 2rem;
+}
+
+.container p{
+    margin-bottom: 1.5rem;
+}
+.container ul{
+    display: flex;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.container .btn {
+background-color: hsl(158, 36%, 37%);
+color: #fff;
+font-weight: 700;
+border: none;
+border-radius: 0.6rem;
+width: 100%;
+padding:1rem 2rem ;
+cursor: pointer;
+outline: none;
+transition: 0.4s;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1rem;
+}
+
+.container .btn:hover{
+background-color: hsl(158, 38%, 20%);
+}
+
+.container .btn img {
+margin-right: 0.5rem;
+}
+  
+
+.container ul li:first-child {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.container ul li:nth-child(2) {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+.container article:first-child img{
+    border-radius: 1rem 1rem 0 0;
+  
+}
+
+.container article:last-child{
+    background-color:  hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    border-radius: 0 0 1rem 1rem;
+    margin-top: -1rem;
+}
+
+@media  (min-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container article:first-child img {
+        border-radius: 0.5rem 0 0 0.5rem;
+        width: 100%;
+    }
+    
+    picture img{
+        height: 100%;
+    }
+    .container article:last-child {
+        border-radius: 0 0.5rem 0.5rem 0;
+        margin-top: 0;
+    }
+    .container p{
+        margin-bottom: 1rem;
+    }
+    
+    .container ul {
+        margin-bottom: 1rem;
+    }
+}
